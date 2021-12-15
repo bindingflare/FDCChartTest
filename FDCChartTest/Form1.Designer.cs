@@ -150,6 +150,7 @@
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
+            this.barListItem1 = new DevExpress.XtraBars.BarListItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.chartTypeBar1 = new DevExpress.XtraCharts.UI.ChartTypeBar();
             this.createBarBaseItem1 = new DevExpress.XtraCharts.UI.CreateBarBaseItem();
@@ -219,6 +220,7 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.chartBarController1 = new DevExpress.XtraCharts.UI.ChartBarController(this.components);
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandBarGalleryDropDown1)).BeginInit();
@@ -306,8 +308,10 @@
             this.selectAxisMeasureUnitBarItem1,
             this.selectPeriodBarItem1,
             this.addVerticalConstantLineBarItem1,
-            this.addHorizontalConstantLineBarItem1});
-            this.barManager1.MaxItemId = 40;
+            this.addHorizontalConstantLineBarItem1,
+            this.barListItem1,
+            this.barButtonItem1});
+            this.barManager1.MaxItemId = 42;
             this.barManager1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.selectSeriesRepositoryItemComboBox1,
             this.changeSeriesViewRepositoryItemComboBox1,
@@ -321,7 +325,17 @@
             this.bar1.DockCol = 5;
             this.bar1.DockRow = 0;
             this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(this.barListItem1),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1)});
             this.bar1.Text = "Tools";
+            // 
+            // barListItem1
+            // 
+            this.barListItem1.Caption = "View Variable";
+            this.barListItem1.Id = 40;
+            this.barListItem1.Name = "barListItem1";
+            this.barListItem1.ListItemClick += new DevExpress.XtraBars.ListItemClickEventHandler(this.barListItem1_ListItemClick);
             // 
             // bar3
             // 
@@ -1115,6 +1129,13 @@
             this.chartBarController1.BarItems.Add(this.addHorizontalConstantLineBarItem1);
             this.chartBarController1.Control = this.chartControl1;
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Reset";
+            this.barButtonItem1.Id = 41;
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -1222,6 +1243,8 @@
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraCharts.UI.ChartBarController chartBarController1;
+        private DevExpress.XtraBars.BarListItem barListItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }
 

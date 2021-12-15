@@ -8,8 +8,8 @@
     <ProjectGuid>{E401CBF7-9D58-4606-B30C-2CA48C4D036C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DXApplication5</RootNamespace>
-    <AssemblyName>DXApplication5</AssemblyName>
+    <RootNamespace>FDCChartTest</RootNamespace>
+    <AssemblyName>FDCChartTest</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -83,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.config" />
     <None Include="packages.config" />
